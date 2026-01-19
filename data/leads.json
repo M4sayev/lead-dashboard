@@ -1,0 +1,162 @@
+[
+  {
+    "id": "lead_001",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-15T10:30:00Z",
+    "notes": "Interested in an enterprise plan. Follow up next week."
+  },
+  {
+    "id": "lead_002",
+    "name": "Michael Brown",
+    "email": "michael.brown@example.com",
+    "status": "New",
+    "createdAt": "2025-12-16T08:45:00Z",
+    "notes": "Signed up via landing page."
+  },
+  {
+    "id": "lead_003",
+    "name": "Emily Davis",
+    "email": "emily.davis@example.com",
+    "status": "Contacted",
+    "createdAt": "2025-12-14T14:10:00Z",
+    "notes": "Initial outreach sent. Awaiting response."
+  },
+  {
+    "id": "lead_004",
+    "name": "James Wilson",
+    "email": "james.wilson@example.com",
+    "status": "Lost",
+    "createdAt": "2025-12-10T09:20:00Z",
+    "notes": "Chose a competitor due to pricing."
+  },
+  {
+    "id": "lead_005",
+    "name": "Olivia Martinez",
+    "email": "olivia.martinez@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-11T11:00:00Z",
+    "notes": "Needs demo scheduled next week."
+  },
+  {
+    "id": "lead_006",
+    "name": "Daniel Anderson",
+    "email": "daniel.anderson@example.com",
+    "status": "New",
+    "createdAt": "2025-12-17T15:35:00Z",
+    "notes": "Downloaded whitepaper."
+  },
+  {
+    "id": "lead_007",
+    "name": "Sophia Lee",
+    "email": "sophia.lee@example.com",
+    "status": "Contacted",
+    "createdAt": "2025-12-13T13:50:00Z",
+    "notes": "Follow-up call scheduled."
+  },
+  {
+    "id": "lead_008",
+    "name": "William Harris",
+    "email": "william.harris@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-12T16:40:00Z",
+    "notes": "Confirmed budget and timeline."
+  },
+  {
+    "id": "lead_009",
+    "name": "Ava Thompson",
+    "email": "ava.thompson@example.com",
+    "status": "Lost",
+    "createdAt": "2025-12-09T10:15:00Z",
+    "notes": "No longer interested."
+  },
+  {
+    "id": "lead_010",
+    "name": "Ethan Moore",
+    "email": "ethan.moore@example.com",
+    "status": "New",
+    "createdAt": "2025-12-18T09:00:00Z",
+    "notes": "Requested pricing information."
+  },
+  {
+    "id": "lead_011",
+    "name": "Isabella Taylor",
+    "email": "isabella.taylor@example.com",
+    "status": "Contacted",
+    "createdAt": "2025-12-14T17:25:00Z",
+    "notes": "Sent product overview email."
+  },
+  {
+    "id": "lead_012",
+    "name": "Lucas White",
+    "email": "lucas.white@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-11T08:30:00Z",
+    "notes": "Decision-maker identified."
+  },
+  {
+    "id": "lead_013",
+    "name": "Mia Clark",
+    "email": "mia.clark@example.com",
+    "status": "New",
+    "createdAt": "2025-12-18T12:10:00Z",
+    "notes": "Signed up through referral."
+  },
+  {
+    "id": "lead_014",
+    "name": "Benjamin Lewis",
+    "email": "benjamin.lewis@example.com",
+    "status": "Contacted",
+    "createdAt": "2025-12-13T09:55:00Z",
+    "notes": "Left voicemail."
+  },
+  {
+    "id": "lead_015",
+    "name": "Charlotte Walker",
+    "email": "charlotte.walker@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-12T14:05:00Z",
+    "notes": "Interested in annual billing."
+  },
+  {
+    "id": "lead_016",
+    "name": "Henry Young",
+    "email": "henry.young@example.com",
+    "status": "Lost",
+    "createdAt": "2025-12-08T11:45:00Z",
+    "notes": "No response after multiple follow-ups."
+  },
+  {
+    "id": "lead_017",
+    "name": "Amelia King",
+    "email": "amelia.king@example.com",
+    "status": "New",
+    "createdAt": "2025-12-19T10:00:00Z",
+    "notes": "Registered for webinar."
+  },
+  {
+    "id": "lead_018",
+    "name": "Alexander Scott",
+    "email": "alexander.scott@example.com",
+    "status": "Contacted",
+    "createdAt": "2025-12-15T15:20:00Z",
+    "notes": "Asked about integration options."
+  },
+  {
+    "id": "lead_019",
+    "name": "Harper Green",
+    "email": "harper.green@example.com",
+    "status": "Qualified",
+    "createdAt": "2025-12-16T13:40:00Z",
+    "notes": "Ready for contract review."
+  },
+  {
+    "id": "lead_020",
+    "name": "Jack Robinson",
+    "email": "jack.robinson@example.com",
+    "status": "New",
+    "createdAt": "2025-12-19T16:30:00Z",
+    "notes": "Requested a product demo."
+  }
+]
