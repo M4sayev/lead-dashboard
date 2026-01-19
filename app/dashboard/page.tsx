@@ -7,9 +7,35 @@ import EmptyResponse from "@/components/Errors/EmptyResponse";
 import LeadTableCard from "@/components/pages/dashboard/LeadsTable/LeadTable";
 import CardsSkeleton from "@/components/shared/Cards/CardsSkeleton";
 import LeadsTableSkeleton from "@/components/pages/dashboard/LeadsTable/LeadsTableSkeleton";
+import FilterComponent from "@/components/pages/dashboard/filters/FilterComponent";
+import { useMemo, useState } from "react";
+import { Status } from "@/lib/types";
 
 export default function DashBoard() {
   const { data, isError, isLoading, error } = useLeads();
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filterValue, setFilterValue] = useState<Status | "Total">("Total");
+
+  const filteredData = useMemo(() => {
+    if (!data) return [];
+
+    let filtered = [...data];
+
+    if (filterValue !== "Total") {
+      filtered = filtered.filter((lead) => lead.status === filterValue);
+    }
+
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(
+        (lead) =>
+          lead.name.toLowerCase().includes(query) ||
+          lead.email.toLowerCase().includes(query),
+      );
+    }
+
+    return filtered;
+  }, [data, filterValue, searchQuery]);
 
   if (isError) {
     return (
@@ -40,8 +66,15 @@ export default function DashBoard() {
         ) : (
           <>
             <Cards data={data} />
-
-            <LeadTableCard data={data} />
+            <div className="w-full">
+              <FilterComponent
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+                setFilterValue={setFilterValue}
+                filterValue={filterValue}
+              />
+              <LeadTableCard data={filteredData} />
+            </div>
           </>
         )}
       </div>

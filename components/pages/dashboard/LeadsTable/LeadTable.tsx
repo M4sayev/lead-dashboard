@@ -8,19 +8,33 @@ interface DataTableCardProps {
 }
 
 function LeadTableCard({ data }: DataTableCardProps) {
+  const isEmpty = data.length === 0;
   return (
-    <Card className=" w-full overflow-auto mb-20 md:mb-10 mt-7">
+    <Card
+      id="leads-table"
+      className=" w-full overflow-auto mb-20 md:mb-10 mt-5"
+    >
       <CardHeader>
         <h2>Leads Table</h2>
       </CardHeader>
       <CardContent>
-        <Table>
-          <TableBody>
-            {data.map((lead) => (
-              <LeadTableRow key={lead.id} lead={lead} />
-            ))}
-          </TableBody>
-        </Table>
+        {isEmpty ? (
+          <div
+            className="py-12 text-center text-muted-foreground"
+            role="status"
+            aria-live="polite"
+          >
+            No leads match your search or filters.
+          </div>
+        ) : (
+          <Table>
+            <TableBody>
+              {data.map((lead) => (
+                <LeadTableRow key={lead.id} lead={lead} />
+              ))}
+            </TableBody>
+          </Table>
+        )}
       </CardContent>
     </Card>
   );
