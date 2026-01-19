@@ -1,0 +1,44 @@
+{
+  "candidate": {
+    "name": "Elvin",
+    "email": "msayev02@gmail.com",
+    "github_username": "M4sayev",
+    "time_spent_minutes": 140
+  },
+  "stack": {
+    "nextjs_version": "16.1.3",
+    "typescript": true,
+    "tailwind": true,
+    "shadcn_ui": true,
+    "data_loading_method": "local-json"
+  },
+  "features_completed": {
+    "login_page": true,
+    "dashboard_layout": true,
+    "leads_table": true,
+    "search_filter": true,
+    "status_filter": true,
+    "details_view_modal": true,
+    "analytics_section": true,
+    "responsive_design": true,
+    "empty_states": true
+  },
+  "optional_features": {
+    "loading_states": true,
+    "error_handling": true,
+    "tanstack_query": true,
+    "animations": false,
+    "dark_mode": false
+  },
+  "file_paths": {
+    "login_route": "/login",
+    "dashboard_route": "/dashboard",
+    "data_file": "./data/leads.json",
+    "api_route": ""
+  },
+  "self_assessment": {
+    "confidence_level": "8",
+    "biggest_challenge": "Managing scope and avoiding overbuilding. I often wanted to add more features and UI polish more reusability, but had to stay focused on the assignment requirements.",
+    "proudest_aspect": "Code scalability and reusability"
+  }
+}

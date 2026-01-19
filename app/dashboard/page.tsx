@@ -45,7 +45,7 @@ export default function DashBoard() {
     );
   }
 
-  if (!data) {
+  if (!data && !isLoading) {
     return (
       <EmptyResponse>
         <span>No data found</span>
@@ -65,7 +65,7 @@ export default function DashBoard() {
           </>
         ) : (
           <>
-            <Cards data={data} />
+            {data && <Cards data={data} />}
             <div className="w-full">
               <FilterComponent
                 searchQuery={searchQuery}
