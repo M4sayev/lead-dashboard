@@ -5,9 +5,10 @@ import LeadTableRow from "./LeadTableRow";
 
 interface DataTableCardProps {
   data: Lead[];
+  searchQuery: string;
 }
 
-function LeadTableCard({ data }: DataTableCardProps) {
+function LeadTableCard({ data, searchQuery }: DataTableCardProps) {
   const isEmpty = data.length === 0;
   return (
     <Card
@@ -24,7 +25,7 @@ function LeadTableCard({ data }: DataTableCardProps) {
             role="status"
             aria-live="polite"
           >
-            No leads match your search or filters.
+            {`No leads match your '${searchQuery}'`}
           </div>
         ) : (
           <Table>

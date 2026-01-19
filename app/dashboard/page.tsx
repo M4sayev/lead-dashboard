@@ -73,7 +73,7 @@ export default function DashBoard() {
                 setFilterValue={setFilterValue}
                 filterValue={filterValue}
               />
-              <LeadTableCard data={filteredData} />
+              <LeadTableCard data={filteredData} searchQuery={searchQuery} />
             </div>
           </>
         )}

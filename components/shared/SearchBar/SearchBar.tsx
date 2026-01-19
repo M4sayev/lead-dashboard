@@ -32,6 +32,7 @@ function SearchBar({
         type="text"
         placeholder={placeholder}
         onChange={handleChange}
+        className="text-fluid-xs"
       />
       <Search
         className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4"
