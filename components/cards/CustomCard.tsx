@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { Status } from "@/lib/types";
 import type { LucideIcon } from "lucide-react";
@@ -13,8 +7,7 @@ import ClientSideCountUp from "../CountUp/CountUp";
 
 interface CardProps {
   headerText: string;
-  result: string;
-  description: string;
+  result: number;
   Icon: LucideIcon;
   status: Status;
   className?: string;
@@ -23,7 +16,6 @@ interface CardProps {
 function CustomCard({
   headerText,
   result,
-  description,
   Icon,
   status = "New",
   className = "",
@@ -33,18 +25,13 @@ function CustomCard({
       <CardHeader>
         <div className="flex justify-between items-center gap-2">
           <CardTitle>{headerText}</CardTitle>
-          <CustomIcon
-            Icon={Icon}
-            status={status}
-            className="p-3 md:p-2 lg:p-3"
-          />
+          <CustomIcon Icon={Icon} status={status} />
         </div>
       </CardHeader>
       <CardContent>
-        <span className="text-fluid-3xl font-bold ">
-          <ClientSideCountUp end={Number(result)} />
+        <span className="text-fluid-4xl font-bold text-blue-500">
+          <ClientSideCountUp end={result} />
         </span>
-        <CardDescription>{description}</CardDescription>
       </CardContent>
     </Card>
   );

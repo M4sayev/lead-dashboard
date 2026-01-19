@@ -13,9 +13,9 @@ function CustomIcon({ Icon, status, className = "" }: CustomIconProps) {
   return (
     <div
       style={{ backgroundColor: color[1] }}
-      className={`${className} bg-accent p-3 rounded-full`}
+      className={`${className} bg-accent p-2 rounded-full`}
     >
-      <Icon style={{ color: color[0] }} />
+      <Icon width={20} height={20} style={{ color: color[0] }} />
     </div>
   );
 }
