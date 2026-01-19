@@ -6,14 +6,15 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../ui/card";
+} from "../../ui/card";
 import { useForm } from "react-hook-form";
 import { UserFormData, userSchema } from "@/schemas/login";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Field, FieldGroup } from "../ui/field";
-import FormField from "../form/FormField";
-import { Button } from "../ui/button";
+import { Field, FieldGroup } from "../../ui/field";
+import FormField from "../../form/FormField";
+import { Button } from "../../ui/button";
 import { useRouter } from "next/navigation";
+import { LayoutDashboard } from "lucide-react";
 
 function Login() {
   const router = useRouter();
@@ -37,13 +38,17 @@ function Login() {
   };
 
   return (
-    <div className={cn("flex flex-col gap-6 max-w-xl m-auto w-[80%]")}>
+    <div className={cn("flex flex-col gap-6 max-w-md m-auto w-[80%]")}>
       <Card>
         <CardHeader>
-          <CardTitle>Login to your account</CardTitle>
-          <CardDescription>
-            Enter your username below to login to your account
-          </CardDescription>
+          <CardTitle className="text-fluid-2xl text-blue-700 flex gap-2 items-center">
+            <LayoutDashboard
+              aria-hidden="true"
+              className="bg-blue-700 text-white p-0.5 rounded"
+            />
+            Lead DashBoard
+          </CardTitle>
+          <CardDescription>Login to your account</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -63,7 +68,12 @@ function Login() {
                 type="password"
               />
               <Field>
-                <Button type="submit">Sign In</Button>
+                <Button
+                  type="submit"
+                  className="bg-blue-700 hover:bg-blue-900 focus:ring-ring cursor-pointer"
+                >
+                  Sign In
+                </Button>
               </Field>
             </FieldGroup>
           </form>

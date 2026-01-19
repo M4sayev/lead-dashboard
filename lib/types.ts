@@ -1,4 +1,4 @@
-export type status = "New" | "Contacted" | "Qualified" | "Lost";
+export type Status = "New" | "Contacted" | "Qualified" | "Lost";
 export type Lead = {
   id: string;
   name: string;
