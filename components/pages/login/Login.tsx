@@ -11,10 +11,10 @@ import { useForm } from "react-hook-form";
 import { UserFormData, userSchema } from "@/schemas/login";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Field, FieldGroup } from "../../ui/field";
-import FormField from "../../form/FormField";
 import { Button } from "../../ui/button";
 import { useRouter } from "next/navigation";
 import { LayoutDashboard } from "lucide-react";
+import FormField from "@/components/shared/form/FormField";
 
 function Login() {
   const router = useRouter();

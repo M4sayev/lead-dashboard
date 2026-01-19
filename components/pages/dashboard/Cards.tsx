@@ -1,7 +1,6 @@
 import { Lead, Status } from "@/lib/types";
-import CustomCard from "../../Cards/CustomCard";
-import { User2 } from "lucide-react";
 import { ICON_MAP } from "@/lib/constants";
+import CustomCard from "@/components/shared/Cards/CustomCard";
 
 interface CardsProps {
   data: Lead[];

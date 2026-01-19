@@ -1,6 +1,6 @@
 import DateTime from "@/app/A11y/DateTime";
 import EmailLink from "@/app/A11y/EmailLink";
-import StatusSpan from "@/components/StatusSpan/StatusSpan";
+import StatusSpan from "@/components/shared/StatusSpan/StatusSpan";
 import {
   Dialog,
   DialogContent,
@@ -24,7 +24,7 @@ function LeadsDialog({ lead, open, setOpen }: LeadsDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="overflow-y-scroll max-h-120 [@media(max-height:400px)]:max-h-75 sm:max-h-screen sm:overflow-auto">
+      <DialogContent className="sm:max-h-screen sm:overflow-auto">
         <DialogHeader>
           <DialogTitle>{name}</DialogTitle>
           <DialogDescription className="sr-only">

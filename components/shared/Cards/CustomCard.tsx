@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { Status } from "@/lib/types";
 import type { LucideIcon } from "lucide-react";
-import CustomIcon from "../CustomIcon/CustomIcon";
 import ClientSideCountUp from "../CountUp/CountUp";
+import CustomIcon from "../CustomIcon/CustomIcon";
 
 interface CardProps {
   headerText: string;

@@ -5,7 +5,7 @@ import { Lead } from "@/lib/types";
 import { formatDate } from "@/lib/utils";
 import { useState } from "react";
 import LeadsDialog from "../LeadsDialog/LeadsDialog";
-import StatusSpan from "@/components/StatusSpan/StatusSpan";
+import StatusSpan from "@/components/shared/StatusSpan/StatusSpan";
 
 function LeadTableRow({ lead }: { lead: Lead }) {
   const [isOpen, setIsOpen] = useState(false);
