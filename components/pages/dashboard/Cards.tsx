@@ -1,5 +1,5 @@
 import { Lead, Status } from "@/lib/types";
-import CustomCard from "./CustomCard";
+import CustomCard from "../../Cards/CustomCard";
 import { User2 } from "lucide-react";
 import { ICON_MAP } from "@/lib/constants";
 

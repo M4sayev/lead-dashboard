@@ -3,7 +3,7 @@ import { LayoutDashboard, User } from "lucide-react";
 function Navbar() {
   return (
     <header className=" py-5 border-b border-0 md:border-b bg-sidebar">
-      <div className="max-w-5xl mx-auto flex justify-between px-5">
+      <div className="max-w-7xl mx-auto flex justify-between px-5">
         <div className="flex items-center gap-2">
           <LayoutDashboard
             aria-hidden="true"

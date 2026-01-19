@@ -14,7 +14,7 @@ export default function DashboardLayout({
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="w-full flex-1 p-6 max-w-5xl mx-auto">
+      <main className="w-full flex-1 p-6 max-w-7xl mx-auto">
         <h1 className="text-fluid-2xl mb-5">Lead Dashboard</h1>
         <QueryClientProvider client={queryClient}>
           {children}
