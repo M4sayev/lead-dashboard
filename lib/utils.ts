@@ -19,3 +19,14 @@ export function formatDate(str: string): string {
 
   return "-";
 }
+
+export function formatFullDate(date: string): string {
+  const newDate = new Date(date);
+
+  const formatted = new Intl.DateTimeFormat("en-US", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(newDate);
+
+  return formatted;
+}

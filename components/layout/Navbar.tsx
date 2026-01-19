@@ -15,11 +15,11 @@ function Navbar() {
         <button
           aria-label="Open user info dropdown"
           type="button"
-          className="group cursor-pointer rounded-full border-gray-400 hover:border-blue-500 border-2 p-1 transition-colors ease-in-out duration-150"
+          className="group bg-white cursor-pointer rounded-full border-blue-400 hover:border-white hover:bg-blue-400 border-2 p-1 transition-colors ease-in-out duration-150"
         >
           <User
             aria-hidden="true"
-            className="text-blue text-gray-500 group-hover:text-blue-500 transition-colors ease-in-out duration-150"
+            className="text-blue text-blue-400 group-hover:text-white transition-all ease-in-out duration-150"
           />
         </button>
       </div>

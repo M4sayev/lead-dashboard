@@ -5,9 +5,7 @@ import LoadingSR from "../A11y/LoadingSR";
 import CardsSkeleton from "@/components/Cards/CardsSkeleton";
 import ErrorMessage from "@/components/Errors/ErrorMessage";
 import EmptyResponse from "@/components/Errors/EmptyResponse";
-import LeadTableRow from "@/components/pages/dashboard/Table/LeadTableRow";
-import { Lead } from "@/lib/types";
-import LeadTableCard from "@/components/pages/dashboard/Table/LeadTable";
+import LeadTableCard from "@/components/pages/dashboard/LeadsTable/LeadTable";
 
 export default function DashBoard() {
   const { data, isError, isLoading, error } = useLeads();
